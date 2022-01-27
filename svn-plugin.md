@@ -14,9 +14,17 @@
 
 ## 3 配置工作任务
 
-其他操作略过，只介绍源码管理。
+其他步骤略过，只介绍源码管理和构建。
 
-1. 选择 ```Subversion```
-2. 配置 Modules
-   - Repository URL:  svn 仓库地址。
-   - Credentials: 选择配置的 svn 凭据。
+1. 源码管理
+   1. 选择 ```Subversion```
+   2. 配置 Modules
+      - Repository URL:  svn 仓库地址。
+      - Credentials: 选择配置的 svn 凭据。
+2. 构建(以 windows 系统为例)
+   - 选择 ```Execute Windows batch command```
+   - 输入执行命令(```默认是当前工作任务所在的目录```):
+      ```bash
+      cd project_name
+      mvn clean package -Dmaven.test.skip=true
+      ```
