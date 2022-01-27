@@ -10,7 +10,7 @@
 
 1. 点击 ```Manage Jenkins -> Manage Credentials -> 凭据 -> 域 -> 添加凭据```, 打开凭据面板。
 2. 选择类型 ```Usernam with password```。
-3. 配置账号、密码。
+3. 配置用户名、密码。
 
 ## 3 配置工作任务
 
