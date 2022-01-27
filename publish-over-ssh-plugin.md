@@ -23,7 +23,7 @@ Publish Over SSH 1.22:
 2. 配置 SSH Servers
    - Name: 服务器名称
    - Hostname: 服务器的主机名或 IP 地址，一般使用 IP 地址
-   - Username: 服务器的登录账号
+   - Username: 服务器的登录用户名
    - Remote Directory: 服务器上的远程目录，即上传的文件在远程服务器里所存储的起始目录，必须是已存在的目录，一般配置 ```/``` 即可。
    - 点高级，勾选 ```Use password authentication, or use a different key```
 
