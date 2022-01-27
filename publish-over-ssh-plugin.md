@@ -31,7 +31,7 @@ Publish Over SSH 1.22:
 
 ## 3 配置工作任务
 
-其他操作略过，只介绍构建后操作。
+其他步骤略过，只介绍构建后操作。
 
 1. 选择 ```Send build artifacts over SSH```
 2. 配置 SSH Server
