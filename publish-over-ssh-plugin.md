@@ -2,9 +2,12 @@
 
 ## 1 安装 Publish Over SSH 插件
 
-由于以下原因，Publish Over SSH 插件现已被挂起:
+由于以下原因，Publish Over SSH 插件现被标记为已过时:
 
 ```
+The following installed plugins are deprecated:
+   Publish Over SSH
+
 Publish Over SSH 1.22:
    Password stored in plain text
    Path traversal vulnerability
