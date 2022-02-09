@@ -37,12 +37,12 @@ Publish Over SSH 1.22:
 2. 配置 SSH Server
    - Name: 选择在系统配置里所配置的服务器名称
 2. 配置 Transfer Set
-   - Source files: ```**/*``` 表示当前工作目录下所有的文件夹和文件，可以点击当前工作任务的 ```工作空间``` 来查看其目录下的所有的文件夹和文件
+   - Source files: ```**/*``` 表示当前工作目录下所有的文件夹和文件; 多个文件之间用 ```逗号(,)``` 隔开, 比如: ```dir1/dir1-1/file1,dir2/dir2-1/file2,dir3/file3```; 可以点击当前工作任务的 ```工作空间``` 来查看其目录下的所有的文件夹和文件
    - Remove prefix: 针对上面配置的 Source files 目录，移除匹配的目录。
    - Remote directory: 服务器上的远程目录，可以是已存在或不存在的目录，如果是不存在的目录，会在服务器上自动创建。
    - Exec command: 远程服务器执行的命令。
 
 文件上传到远程服务器的最终目录:
 
-1. 没有配置 Remove prefix: ```系统配置的 Remote directory + 工作任务配置的 Remote directory + Source files```
-2. 配置了 Remove prefix: ```系统配置的 Remote directory + 工作任务配置的 Remote directory + (Source files - Remove prefix)```
+1. 没有配置 Remove prefix: ```系统配置的 Remote directory``` + ```工作任务配置的 Remote directory``` + ```Source files```
+2. 配置了 Remove prefix: ```系统配置的 Remote directory``` + ```工作任务配置的 Remote directory``` + ```(Source files - Remove prefix)```
