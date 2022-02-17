@@ -39,6 +39,7 @@ Publish Over SSH 1.22:
 1. 选择 ```Send build artifacts over SSH```
 2. 配置 SSH Server
    - Name: 选择在系统配置里所配置的服务器名称
+   - 高级...: 勾选 ```Verbose output in console```， 控制台打印 shell 脚本的输出内容
 2. 配置 Transfer Set
    - Source files: ```**/*``` 表示当前工作目录下所有的文件夹和文件; 多个文件之间用 ```逗号(,)``` 隔开, 比如: ```dir1/dir1-1/file1,dir2/dir2-1/file2,dir3/file3```; 可以点击当前工作任务的 ```工作空间``` 来查看其目录下的所有的文件夹和文件
    - Remove prefix: 针对上面配置的 Source files 目录，移除匹配的目录。
