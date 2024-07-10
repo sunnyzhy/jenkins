@@ -1,5 +1,7 @@
 # Profile
 
+**vue 环境无须单独安装 node 或 nvm，使用 Jenkins 的 NodeJS 插件即可。**
+
 ## 插件安装
 
 一定要提前安装好相应的插件，如：
