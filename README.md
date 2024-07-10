@@ -1,6 +1,9 @@
 # Profile
 
-**vue 环境无须单独安装 node 或 nvm，使用 Jenkins 的 NodeJS 插件即可。**
+## 前言
+
+- **无须单独安装 Subversion，使用 Jenkins 的 Subversion 插件即可。**
+- **无须单独安装 node 或 nvm，使用 Jenkins 的 NodeJS 插件即可（可配置多版本 node）。**
 
 ## 插件安装
 
