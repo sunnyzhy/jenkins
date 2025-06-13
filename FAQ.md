@@ -1,3 +1,5 @@
+# FAQ
+
 ## This account either does not hava the privilege to logon as a service or the account was unable to be verified
 
 打开 ```控制面板 -> 系统和安全 -> 管理工具 -> 本地安全策略 -> 本地策略 --> 用户权限分配 --> 作为服务登录```，添加当前登录用户。
@@ -41,3 +43,16 @@
    ```
 3. 重启Jenkins服务
 
+## Jenkins SSH 远程执行脚本找不到 Java 命令的解决方案
+
+原因：Java 可能通过非标准方式安装（如手动解压 JDK 包）。
+
+解决方法：使用 Java 绝对路径，避免依赖 PATH：
+
+```sh
+bash
+#!/bin/bash
+
+# 使用绝对路径调用 Java
+/usr/lib/jvm/java-17/bin/java -jar myapp.jar
+```
